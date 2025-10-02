@@ -7,6 +7,8 @@ services:
     Bene\DemoBundle\:
         resource: '../../*'
         exclude: '../../{Resources,DependencyInjection,**/*Test.php}'
+        public: true   # опционально, для удобства отладки
+
 
     # пример параметра из конфига
     Bene\DemoBundle\Controller\HelloController:
