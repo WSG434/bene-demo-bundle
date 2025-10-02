@@ -1,0 +1,14 @@
+# src/Resources/config/services.yaml
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    Bene\DemoBundle\:
+        resource: '../../*'
+        exclude: '../../{Resources,DependencyInjection,**/*Test.php}'
+
+    # пример параметра из конфига
+    Bene\DemoBundle\Controller\HelloController:
+        arguments:
+            $greeting: '%bene_demo.greeting%'

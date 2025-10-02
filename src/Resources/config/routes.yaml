@@ -1,0 +1,4 @@
+# src/Resources/config/routes.yaml
+bene_demo_routes:
+    resource: '../../Controller/'
+    type: attribute

@@ -1,0 +1,55 @@
+
+###> symfony/framework-bundle ###
+/.env.local
+/.env.test
+/.env.local.php
+/.env.*.local
+/.env.dev
+/config/secrets/prod/prod.decrypt.private.php
+/public/bundles/
+/var/
+/vendor/
+###< symfony/framework-bundle ###
+
+###> phpunit/phpunit ###
+/phpunit.xml
+.phpunit.result.cache
+.phpunit
+/.phpunit.cache
+#/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.testing
+.env.backup
+.env.production
+Homestead.json
+Homestead.yaml
+auth.json
+npm-debug.log
+yarn-error.log
+/.fleet
+/.idea
+/.vscode
+/**/.DS_Store
+.editorconfig
+.gitattributes
+
+###> symfony/webpack-encore-bundle ###
+/node_modules/
+#/public/build/
+npm-debug.log
+yarn-error.log
+###< symfony/webpack-encore-bundle ###
+
+###> symfony/asset-mapper ###
+/assets/vendor/
+
+/vendor/
+/composer.lock
+/.idea/
+/.vscode/
+/var/
+/node_modules/
