@@ -10,5 +10,6 @@ services:
 
     # пример параметра из конфига
     Bene\DemoBundle\Controller\HelloController:
+        public: true
         arguments:
             $greeting: '%bene_demo.greeting%'
