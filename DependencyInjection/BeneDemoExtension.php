@@ -11,15 +11,19 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 final class BeneDemoExtension extends Extension
 {
-public function load(array $configs, ContainerBuilder $container): void
-{
-$configuration = new Configuration();
-$config = $this->processConfiguration($configuration, $configs);
+    public function getAlias(): string
+    {
+        return 'bene_demo';
+    }
+    public function load(array $configs, ContainerBuilder $container): void
+    {
+//    $configuration = new Configuration();
+//    $config = $this->processConfiguration($configuration, $configs);
 
-$loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
-$loader->load('services.yaml');
+    $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+    $loader->load('services.yaml');
 
-// пример: прокинуть параметр в сервисы
-$container->setParameter('bene_demo.greeting', $config['greeting']);
-}
+    // пример: прокинуть параметр в сервисы
+//    $container->setParameter('bene_demo.greeting', $config['greeting']);
+    }
 }
