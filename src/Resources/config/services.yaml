@@ -9,7 +9,7 @@ services:
         exclude: '../../{Resources,DependencyInjection,**/*Test.php}'
 
     # пример параметра из конфига
-    Bene\DemoBundle\Controller\HelloController:
+    Bene\DemoBundle\Controller\HelloController\:
         resource: '../../Controller/'
         public: true
         arguments:
